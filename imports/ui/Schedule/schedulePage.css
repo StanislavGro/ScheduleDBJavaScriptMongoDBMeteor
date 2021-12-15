@@ -1,0 +1,15 @@
+.schedule-page {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.schedule-page__filter-rating {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.schedule-page_rating-slider {
+    width: 300px;
+    margin-left: 10px;
+}

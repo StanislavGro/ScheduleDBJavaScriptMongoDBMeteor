@@ -1,0 +1,36 @@
+.header-outer {
+    background-color: rgba(42, 81, 255, 0.96);
+    position: sticky;
+    top: 0;
+}
+
+.header {
+    height: 100px;
+    color: white;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.header__title {
+    font-size: xxx-large;
+    font-weight: bold;
+}
+
+.header__line {
+    border-left: 2px solid rgb(255, 255, 255);
+    height: 80%;
+    width: 1px;
+}
+
+.header__links {
+    display: flex;
+    gap: 15px;
+}
+
+.header__link {
+    color: white;
+    text-decoration: none;
+}

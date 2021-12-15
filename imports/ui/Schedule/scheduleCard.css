@@ -1,0 +1,22 @@
+.schedule-card {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.schedule-card__main {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.schedule-card__info-secondary {
+    display: flex;
+    gap: 15px;
+}
+
+.schedule-card__controls {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}

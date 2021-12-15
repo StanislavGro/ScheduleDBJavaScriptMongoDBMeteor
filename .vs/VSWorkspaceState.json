@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\.meteor",
+    "\\client",
+    "\\imports",
+    "\\imports\\api",
+    "\\imports\\ui",
+    "\\imports\\ui\\Auditory",
+    "\\imports\\ui\\Group",
+    "\\imports\\ui\\Schedule",
+    "\\server"
+  ],
+  "SelectedNode": "\\imports\\ui\\Schedule\\scheduleForm.css",
+  "PreviewInSolutionExplorer": false
+}
