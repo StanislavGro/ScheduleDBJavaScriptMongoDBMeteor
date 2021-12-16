@@ -2,7 +2,7 @@
     margin: auto;
     max-width: 1175px;
     height: 110px;
-    background-color: #70AB8F;
+    background-color: #BF8530;
     display: flex;
     align-items: center;
     padding-left: 20px;
@@ -40,7 +40,7 @@
 }
 
 .header__link {
-    color: #c45238;
+    color: ghostwhite;
     margin: 0 25px;
     text-decoration: none;
 }

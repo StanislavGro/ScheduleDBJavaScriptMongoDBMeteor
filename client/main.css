@@ -2,20 +2,39 @@ body {
     padding: 0;
     margin: 0;
     font-family: sans-serif;
-    background-color: #E4DBBF;
+    background-color: #FFC673;
 }
 
 .card {
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0 0 5px rgb(170, 170, 170);
+    color: #04396C;
+}
 
+.card1 {
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgb(170, 170, 170);
+    background-color: #679ED2;
 }
 
 .button {
     height: 35px;
     border-radius: 10px;
     min-width: 90px;
+    color: white;
+    background-color: rgb(42, 81, 255);
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+}
+
+.button1 {
+    height: 37px;
+    border-radius: 10px;
+    width: 1150px;
     color: white;
     background-color: rgb(42, 81, 255);
     font-size: 14px;
@@ -29,7 +48,7 @@ body {
 }
 
 .button_green {
-    background-color: seagreen;
+    background-color: green;
 }
 
 .button:hover {

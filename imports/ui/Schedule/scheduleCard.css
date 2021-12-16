@@ -2,12 +2,16 @@
     margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
+    margin-top: 15px;
+    background-color: #FFB140;
+    border: 1px solid grey;
 }
 
 .schedule-card__main {
     display: flex;
     flex-direction: column;
     gap: 5px;
+
 }
 
 .schedule-card__info-secondary {
