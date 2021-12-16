@@ -9,9 +9,9 @@ export const Header: React.FC = () => {
         <div className="header-outer">
             <div className="header container">
                 <div className="header__links">
-                    <Link className="header__link" to="/Schedule">Schedule</Link>
-                    <Link className="header__link" to="/Auditory">Auditory</Link>
-                    <Link className="header__link" to="/Group">Group</Link>
+                    <Link className="header__link" to="/Schedule">Расписание</Link>
+                    <Link className="header__link" to="/Auditory">Аудитории</Link>
+                    <Link className="header__link" to="/Group">Группы</Link>
                 </div>
             </div>
         </div>

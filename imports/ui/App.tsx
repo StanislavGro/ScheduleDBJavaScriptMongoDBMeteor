@@ -6,25 +6,21 @@ import { Header } from '../ui/Header'
 import { SchedulePage } from '../ui/Schedule/SchedulePage'
 import { AuditoryPage } from './Auditory/AuditoryPage'
 import { GroupPage } from '../ui/Group/GroupPage'
-import { Link } from 'react-router-dom'
 
 
 
 export const App: React.FC = () => {
     return (
         <BrowserRouter>
-            <Header>
-            <Link className="header__link" to="/Auditory">Auditory</Link>
-            <Link className="header__link" to="/Group">Group</Link>
-            <Link className="header__link" to="/Schedule">Schedule</Link>
+            <Header/>
+
             <div className="container">
                 <Routes>
                     <Route path="/Auditory" element={<AuditoryPage />} />
                     <Route path="/Group" element={<GroupPage />} />
                     <Route path="/Schedule" element={<SchedulePage />} />
                 </Routes>
-                </div>
-            </Header>
+            </div>
         </BrowserRouter>
     )
 }

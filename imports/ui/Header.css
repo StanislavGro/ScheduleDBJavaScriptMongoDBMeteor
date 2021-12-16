@@ -1,10 +1,19 @@
 .header-outer {
-    background-color: rgba(42, 81, 255, 0.96);
-    position: sticky;
-    top: 0;
+    margin: auto;
+    max-width: 1175px;
+    height: 110px;
+    background-color: #70AB8F;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    font-family: Gill Sans, sans-serif;
+    font-size: 240%;
+    font-weight: bold;
+    border-radius: 0px 0px 10px 10px;
 }
 
-.header {
+/*.header {
     height: 100px;
     color: white;
     display: flex;
@@ -12,7 +21,7 @@
     align-items: center;
     padding-left: 20px;
     margin-bottom: 20px;
-}
+}*/
 
 .header__title {
     font-size: xxx-large;
@@ -31,6 +40,7 @@
 }
 
 .header__link {
-    color: white;
+    color: #c45238;
+    margin: 0 25px;
     text-decoration: none;
 }
