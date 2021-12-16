@@ -34,15 +34,15 @@ export const ScheduleCard: React.FC<Props> = ({ schedule }) => {
                 <ScheduleForm schedule={schedule} onSubmit={onEdit} />
                 :
                 <div className="schedule-card__main">   
-                    <Properties title="Недели:" value={schedule.week} />
-                    <Properties title="День:" value={schedule.day} />
-                    <Properties title="Время:" value={schedule.time} />
-                    <Properties title="Группы:" value={groupFromDb.find(g => g._id?.equals(schedule.group._id))?.name } />
+                    <Properties title="Номер недели:" value={schedule.week} />
+                    <Properties title="День недели:" value={schedule.day} />
+                    <Properties title="Промежуток времени:" value={schedule.time} />
+                    <Properties title="Группа:" value={groupFromDb.find(g => g._id?.equals(schedule.group._id))?.name } />
                     <Properties title="Аудитория:" value={auditoryFromDb.find(a => a._id?.equals(schedule.auditory._id))?.name} />
                 </div>
             }
             <div className="schedule-card__controls">
-                <button className="button" onClick={() => setIsEdit(!isEdit)}>{isEdit ? 'Закрыть' : 'Редактировать'}</button>
+                <button className="button" onClick={() => setIsEdit(!isEdit)}>{isEdit ? 'Отмена' : 'Редактировать'}</button>
                 <button className="button button_red" onClick={onDelete}>Удалить</button>
             </div>
         </div>

@@ -21,8 +21,8 @@ export const GroupForm: React.FC<Props> = ({ group, onSubmit }) => {
 
     return (
         <div className="schedule-form">
-            <Properties title="Группа:" value={<input type="text" value={name} onChange={e => setName(e.target.value)} />} />
-            <button className="button button_green" onClick={onClick}>Ок</button>
+            <Properties title="Новая группа:" value={<input type="text" value={name} onChange={e => setName(e.target.value)} />} />
+            <button className="button button_green" onClick={onClick}>ОК</button>
         </div>
     )
 }

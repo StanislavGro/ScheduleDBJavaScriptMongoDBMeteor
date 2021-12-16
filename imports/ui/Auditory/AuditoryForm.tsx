@@ -21,8 +21,8 @@ export const AuditoryForm: React.FC<Props> = ({ auditory, onSubmit }) => {
 
     return (
         <div className="schedule-form">
-            <Properties title="Название:" value={<input type="text" value={name} onChange={e => setName(e.target.value)} />} />
-            <button className="button button_green" onClick={onClick}>Ок</button>
+            <Properties title="Новая аудитория:" value={<input type="text" value={name} onChange={e => setName(e.target.value)} />} />
+            <button className="button button_green" onClick={onClick}>OK</button>
         </div>
     )
 }

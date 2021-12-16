@@ -29,12 +29,12 @@ export const AuditoryCard: React.FC<Props> = ({ auditory }) => {
                 :
                 <div className="schedule-card__main">
 
-                    <Properties title="Название:" value={auditory.name} />
+                    <Properties title="Аудитория:" value={auditory.name} />
                 </div>
             }
             <div className="schedule-card__controls">
-                <button className="button" onClick={() => setIsEdit(!isEdit)}>{isEdit ? 'Закрыть' : 'Редактировать'}</button>
-                <button className="button button_red" onClick={onDelete}>Delete</button>
+                <button className="button" onClick={() => setIsEdit(!isEdit)}>{isEdit ? 'Отмена' : 'Редактировать'}</button>
+                <button className="button button_red" onClick={onDelete}>Удалить</button>
             </div>
         </div>
     )

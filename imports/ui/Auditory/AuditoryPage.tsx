@@ -17,7 +17,7 @@ export const AuditoryPage: React.FC = () => {
     return (
         <div className="schedule-page">
             <div className="card">
-                <button className="button" onClick={() => setAddFormShow(!addFormShow)}>{`${addFormShow ? 'Закрыть' : 'Добавить'}`}</button>
+                <button className="button" onClick={() => setAddFormShow(!addFormShow)}>{`${addFormShow ? 'Отмена' : 'Добавить новую аудиторию'}`}</button>
                 {addFormShow &&
                     <AuditoryForm onSubmit={onAddSubmit} />
                 }

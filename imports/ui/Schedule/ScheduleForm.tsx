@@ -42,9 +42,10 @@ export const ScheduleForm: React.FC<Props> = ({ schedule, onSubmit }) => {
 
     return (
         <div className="schedule-form">
-            <Properties title="Недели:" >
+            <Properties title="Номер недели:" >
                 {/*    value={<input type="text" value={week} onChange={e => setWeek(Number.parseInt(e.target.value))} />}*/}
-                <select onChange={e => setWeek(Number.parseInt(e.target.value))}>
+                <select defaultValue="defaultWeek" onChange={e => setWeek(Number.parseInt(e.target.value))}>
+                    <option disabled value="defaultWeek">-</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -65,9 +66,10 @@ export const ScheduleForm: React.FC<Props> = ({ schedule, onSubmit }) => {
                     <option value="18">18</option>
                 </select>
             </Properties>
-            <Properties title="День:">
+            <Properties title="День недели:">
                 {/*value={<input type="text" value={day} onChange={e => setDay(e.target.value)} />}*/}
-                <select value={day} onChange={e => setDay(e.target.value)} >
+                <select defaultValue="defaultDay" onChange={e => setDay(e.target.value)} >
+                    <option disabled value="defaultDay">-</option>
                     <option value="Понедельник">Понедельник</option>
                     <option value="Вторник">Вторник</option>
                     <option value="Среда">Среда</option>
@@ -76,8 +78,9 @@ export const ScheduleForm: React.FC<Props> = ({ schedule, onSubmit }) => {
                     <option value="Суббота">Суббота</option>
                 </select>
             </Properties>
-            <Properties title="Время:" >
-                <select defaultValue="8:30-10:00" onChange={e => setTime(e.target.value)}>
+            <Properties title="Промежуток времени:" >
+                <select defaultValue="defaultTimePeriod" onChange={e => setTime(e.target.value)}>
+                    <option disabled value="defaultTimePeriod">-</option>
                     <option value="8:30-10:00">8:30-10:00</option>
                     <option value="10:15-11:45">10:15-11:45</option>
                     <option value="12:00-13:30">12:00-13:30</option>
@@ -88,7 +91,8 @@ export const ScheduleForm: React.FC<Props> = ({ schedule, onSubmit }) => {
                 </select>
             </Properties>
             <Properties title="Группа:">
-                <select value={group} onChange={e => setGroup(e.target.value)}>
+                <select defaultValue="defaultGroup" onChange={e => setGroup(e.target.value)}>
+                    <option disabled value="defaultGroup">-</option>
                     {
                         groupFromDb.map(a =>
                             <option key={a._id?.toHexString()} value={a._id?.toHexString()}>
@@ -100,7 +104,8 @@ export const ScheduleForm: React.FC<Props> = ({ schedule, onSubmit }) => {
                 </select>
             </Properties>
             <Properties title="Аудитория:" value={
-                <select value={auditory} onChange={e => setAuditory(e.target.value)}>
+                <select defaultValue="defaultAudtory" onChange={e => setAuditory(e.target.value)}>
+                    <option disabled value="defaultAudtory">-</option>
                     {
                         auditoryFromDb.map(a =>
                             <option key={a._id?.toHexString()} value={a._id?.toHexString()}>
@@ -111,7 +116,7 @@ export const ScheduleForm: React.FC<Props> = ({ schedule, onSubmit }) => {
                     }
                 </select>
             } />
-            <button className="button button_green" onClick={onClick}>Ок</button>
+            <button className="button button_green" onClick={onClick}>OK</button>
         </div>
     )
 }

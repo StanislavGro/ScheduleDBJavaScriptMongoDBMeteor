@@ -11,6 +11,6 @@
     "\\imports\\ui\\Schedule",
     "\\server"
   ],
-  "SelectedNode": "\\imports\\ui\\Schedule\\scheduleForm.css",
+  "SelectedNode": "\\imports\\ui\\Schedule\\ScheduleForm.tsx",
   "PreviewInSolutionExplorer": false
 }

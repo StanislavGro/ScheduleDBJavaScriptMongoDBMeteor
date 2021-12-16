@@ -20,7 +20,7 @@ export const SchedulePage: React.FC = () => {
     return (
         <div className="schedule-page">
             <div className="card">
-                <button className="button" onClick={() => setAddFormShow(!addFormShow)}>{`${addFormShow ? 'Закрыть редактор' : 'Добавить запись'}`}</button>
+                <button className="button" onClick={() => setAddFormShow(!addFormShow)}>{`${addFormShow ? 'Отмена' : 'Добавить новую запись'}`}</button>
                 {addFormShow &&
                     <ScheduleForm onSubmit={onAddSubmit} />
                 }

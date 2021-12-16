@@ -17,7 +17,7 @@ export const GroupPage: React.FC = () => {
     return (
         <div className="schedule-page">
             <div className="card">
-                <button className="button" onClick={() => setAddFormShow(!addFormShow)}>{`${addFormShow ? 'Закрыть' : 'Добавить'}`}</button>
+                <button className="button" onClick={() => setAddFormShow(!addFormShow)}>{`${addFormShow ? 'Отмена действия' : 'Добавить новую группу'}`}</button>
                 {addFormShow &&
                     <GroupForm onSubmit={onAddSubmit} />
                 }
