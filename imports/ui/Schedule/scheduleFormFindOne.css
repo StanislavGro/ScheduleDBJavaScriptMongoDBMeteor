@@ -1,0 +1,14 @@
+.schedule-form__rating {
+    display: flex;
+    gap: 3px;
+    align-items: center;
+}
+
+
+.schedule-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
